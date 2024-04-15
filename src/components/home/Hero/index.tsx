@@ -3,7 +3,7 @@ import HeroText from './HeroText'
 
 export default function Hero() {
   return (
-    <section className="8 flex flex-col items-center justify-between gap-12 py-12 md:py-24 lg:flex-row">
+    <section className="flex min-h-screen flex-col items-center gap-12 pt-12 lg:flex-row lg:justify-between lg:pt-0">
       <HeroText />
       <HeroImage />
     </section>
