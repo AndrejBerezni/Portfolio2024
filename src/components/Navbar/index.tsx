@@ -3,6 +3,7 @@ import { useState } from 'react'
 
 import Link from 'next/link'
 
+import DropDownMenu from './DropDownMenu'
 import GetInTouchLink from './GetInTouchLink'
 import MenuToggler from './MenuToggler'
 import NavbarLink from './NavbarLink'
@@ -26,7 +27,7 @@ export default function Navbar() {
   ]
 
   return (
-    <menu className="flex w-full items-center justify-between text-2xl">
+    <menu className="relative flex w-full items-center justify-between text-2xl">
       <Link
         href="/"
         className="text-2xl font-semibold tracking-wider text-primary"
@@ -47,6 +48,7 @@ export default function Navbar() {
         toggle={() => setMenuOpen((prev) => !prev)}
         open={menuOpen}
       />
+      {menuOpen && <DropDownMenu links={links} />}
     </menu>
   )
 }

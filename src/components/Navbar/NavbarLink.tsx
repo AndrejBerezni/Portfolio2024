@@ -16,9 +16,9 @@ export default function NavbarLink({
     <li>
       <Link
         href={link.address}
-        className={clsx('font-semibold capitalize ', {
+        className={clsx('font-semibold capitalize tracking-wide', {
           'text-brand': pathname === link.address,
-          'text-primary duration-200  hover:text-brand':
+          'text-secondary duration-200  hover:text-brand':
             pathname !== link.address,
         })}
       >
