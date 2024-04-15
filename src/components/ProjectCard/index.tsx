@@ -7,13 +7,13 @@ import { IProject } from '@/lib/interfaces'
 export default function ProjectCard({ project }: { project: IProject }) {
   return (
     <article>
-      <div className="my-4 flex items-center justify-center rounded-md bg-gray-400 px-4 py-3 md:px-8 md:py-6">
+      <div className="group my-4 flex items-center justify-center rounded-md border-4 border-gray-400 bg-gray-400 p-4 duration-500 hover:border-brand hover:shadow-md md:p-8">
         <Image
           src={project.images[0]}
           alt="project image"
           width={1200}
           height={625}
-          className="rounded-lg"
+          className="group-hover:translateY-2 rounded-lg duration-500"
         />
       </div>
       <Link

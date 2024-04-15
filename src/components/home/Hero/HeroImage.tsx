@@ -10,7 +10,7 @@ export default function HeroImage() {
         alt="photo of andrej berezni"
         width={500}
         height={500}
-        className="h-[204px] w-[204px] rounded-full opacity-0 transition-opacity duration-1000 sm:h-[340px] sm:w-[340px] xl:h-[450px] xl:w-[450px]"
+        className="z-10 h-[204px] w-[204px] rounded-full opacity-0 transition-opacity duration-1000 sm:h-[340px] sm:w-[340px] xl:h-[450px] xl:w-[450px]"
         onLoadingComplete={(image) => image.classList.remove('opacity-0')}
       />
     </AnimationFadeIn>
