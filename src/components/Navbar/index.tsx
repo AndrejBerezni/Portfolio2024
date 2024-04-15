@@ -3,28 +3,15 @@ import { useState } from 'react'
 
 import Link from 'next/link'
 
+import { links } from '@/lib/links'
+
 import DropDownMenu from './DropDownMenu'
 import GetInTouchLink from './GetInTouchLink'
 import MenuToggler from './MenuToggler'
-import NavbarLink from './NavbarLink'
+import PageLink from '../PageLink'
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState<boolean>(false)
-
-  const links = [
-    {
-      name: 'home',
-      address: '/',
-    },
-    {
-      name: 'projects',
-      address: '/projects',
-    },
-    {
-      name: 'about',
-      address: '/about',
-    },
-  ]
 
   return (
     <menu className="relative flex w-full items-center justify-between text-2xl">
@@ -37,8 +24,8 @@ export default function Navbar() {
 
       {/* On wide screens, we have links displayed */}
       <ul className="hidden gap-8 md:flex">
-        {links.map((link) => (
-          <NavbarLink key={`${link.name}-navbar-link`} link={link} />
+        {links.slice(0, 3).map((link) => (
+          <PageLink key={`${link.name}-navbar-link`} link={link} />
         ))}
       </ul>
       <GetInTouchLink />
@@ -48,7 +35,7 @@ export default function Navbar() {
         toggle={() => setMenuOpen((prev) => !prev)}
         open={menuOpen}
       />
-      {menuOpen && <DropDownMenu links={links} />}
+      {menuOpen && <DropDownMenu />}
     </menu>
   )
 }

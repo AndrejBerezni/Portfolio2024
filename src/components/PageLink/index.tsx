@@ -1,8 +1,9 @@
+'use client'
 import clsx from 'clsx'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 
-export default function NavbarLink({
+export default function PageLink({
   link,
 }: {
   link: {
@@ -16,7 +17,7 @@ export default function NavbarLink({
     <li>
       <Link
         href={link.address}
-        className={clsx('font-semibold capitalize tracking-wide', {
+        className={clsx('text-nowrap font-semibold capitalize tracking-wide', {
           'text-brand': pathname === link.address,
           'text-secondary duration-200  hover:text-brand':
             pathname !== link.address,
