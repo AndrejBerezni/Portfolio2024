@@ -7,7 +7,7 @@ export const skills = [
   'HTML5',
   'CSS3',
   'Bootstrap',
-  'MaterialUI',
+  'Material UI',
   'styled-components',
   'Tailwind CSS',
   'Node.js',
