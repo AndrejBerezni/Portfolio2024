@@ -16,7 +16,7 @@ export default function ExperienceCard({
 }) {
   return (
     <article
-      className={clsx('mb-12 px-2', {
+      className={clsx('px-2 md:mb-12', {
         hidden: currentSlide !== index,
         inline: currentSlide === index,
       })}
@@ -44,10 +44,10 @@ export default function ExperienceCard({
             duration: 1,
           }}
           key={desc}
-          className="mb-4 flex items-center gap-8 text-xl text-secondary"
+          className="mb-4 flex items-center gap-8 text-secondary md:text-xl"
         >
           <div>
-            <FaCheck className="text-2xl text-brand" />
+            <FaCheck className="text-xl text-brand md:text-2xl" />
           </div>
           <p>{desc}</p>
         </motion.div>

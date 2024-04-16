@@ -4,6 +4,7 @@ import { useState } from 'react'
 import { experience } from '@/lib/experience'
 
 import ExperienceCard from './ExperienceCard'
+import ExperienceCatalogueButtons from './ExperienceCatalogueButtons'
 import ExperienceSelector from './ExperienceSelector'
 export default function ExperienceCatalogue() {
   const [currentSlide, setCurrentSlide] = useState<number>(0)
@@ -24,7 +25,7 @@ export default function ExperienceCatalogue() {
   }
 
   return (
-    <div className="my-12 flex w-full flex-col gap-24 md:flex-row">
+    <div className="my-12 flex w-full flex-col gap-2 md:flex-row md:gap-24">
       <ExperienceSelector
         showExperience={selectSlide}
         currentSlide={currentSlide}
@@ -37,6 +38,11 @@ export default function ExperienceCatalogue() {
           index={index}
         />
       ))}
+      <ExperienceCatalogueButtons
+        changeSlide={changeSlide}
+        currentSlide={currentSlide}
+        maxSlide={experience.length - 1}
+      />
     </div>
   )
 }
