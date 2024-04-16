@@ -15,7 +15,7 @@ export default function SkillBadge({
       }}
       whileInView={{
         opacity: 1,
-        y: 0,
+        y: [-20, 0],
       }}
       viewport={{
         once: true,
@@ -23,6 +23,7 @@ export default function SkillBadge({
       transition={{
         delay: delay * 0.05,
         type: 'spring',
+        ease: 'linear',
       }}
       className="inline min-w-[100px] text-nowrap rounded-2xl border-2 border-brand bg-white px-2 py-1 text-center text-sm font-semibold text-brand shadow-md duration-200 hover:cursor-default hover:bg-brand hover:text-white md:px-3 md:py-2 md:text-xl"
     >

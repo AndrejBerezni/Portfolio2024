@@ -20,7 +20,7 @@ export default function ProjectCard({ project }: { project: IProject }) {
         href={`/projects/${project.name}`}
         className="group flex w-fit items-center gap-4"
       >
-        <h3 className="mb-2 text-2xl font-bold tracking-wide md:text-4xl xl:text-6xl">
+        <h3 className="mb-2 text-xl font-bold tracking-wide md:text-3xl xl:text-5xl">
           {project.name}
         </h3>
         <div className="rounded-full border-4 border-brand text-brand duration-200 group-hover:bg-brand group-hover:text-white">
