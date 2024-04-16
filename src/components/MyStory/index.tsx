@@ -14,6 +14,8 @@ export default function MyStory() {
           especially in development. I found that web development really lets me
           flex my creativity and problem-solving skills.
         </p>
+      </AnimationFadeIn>
+      <AnimationFadeIn>
         <p className="my-6 text-lg md:text-2xl">
           I started out focusing on the{' '}
           <span className="text-brand">front end</span>, but soon realized I
@@ -22,6 +24,8 @@ export default function MyStory() {
           never stops in this field, and I&apos;m always picking up new things
           and getting better at what I already know.
         </p>
+      </AnimationFadeIn>
+      <AnimationFadeIn>
         <p className="mb-16 mt-6 text-lg md:text-2xl">
           With just over a year of experience in development, I&apos;m excited
           to keep growing as a <span className="text-brand">web developer</span>

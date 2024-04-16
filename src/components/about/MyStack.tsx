@@ -27,28 +27,51 @@ export default function MyStack() {
                 Math.floor(skills.length / rows.length) * (index + 1)
               )
               .map((skill) => (
-                <motion.li
-                  initial={{
-                    x: index % 2 === 0 ? 0 : -400,
-                  }}
-                  animate={{
-                    x: index % 2 === 0 ? -400 : 0,
-                  }}
-                  transition={{
-                    duration: 6,
-                    repeat: Infinity,
-                    repeatType: 'mirror',
-                  }}
-                  key={`${skill}-mystack-item`}
-                  className="flex items-center gap-8 text-nowrap tracking-wide"
-                >
-                  <div className="text-2xl text-brand md:text-5xl">
-                    <LuStar />
-                  </div>
-                  <p className="rounded-full bg-primary px-4 py-1 text-lg text-gray-400 md:px-6 md:py-2 md:text-3xl">
-                    {skill}
-                  </p>
-                </motion.li>
+                // This should be refactored - I have two same components, one for small and one for wide screen, with difference in animation values
+                <div key={`${skill}-mystack-item`}>
+                  <motion.li
+                    initial={{
+                      x: index % 2 === 0 ? 0 : -1200,
+                    }}
+                    animate={{
+                      x: index % 2 === 0 ? -1200 : 0,
+                    }}
+                    transition={{
+                      duration: 14,
+                      repeat: Infinity,
+                      repeatType: 'mirror',
+                    }}
+                    className="flex items-center gap-8 text-nowrap tracking-wide sm:hidden"
+                  >
+                    <div className="text-2xl text-brand md:text-5xl">
+                      <LuStar />
+                    </div>
+                    <p className="rounded-full bg-primary px-4 py-1 text-lg text-gray-400 md:px-6 md:py-2 md:text-3xl">
+                      {skill}
+                    </p>
+                  </motion.li>
+                  <motion.li
+                    initial={{
+                      x: index % 2 === 0 ? 0 : -400,
+                    }}
+                    animate={{
+                      x: index % 2 === 0 ? -400 : 0,
+                    }}
+                    transition={{
+                      duration: 6,
+                      repeat: Infinity,
+                      repeatType: 'mirror',
+                    }}
+                    className="hidden items-center gap-8 text-nowrap tracking-wide sm:flex"
+                  >
+                    <div className="text-2xl text-brand md:text-5xl">
+                      <LuStar />
+                    </div>
+                    <p className="rounded-full bg-primary px-4 py-1 text-lg text-gray-400 md:px-6 md:py-2 md:text-3xl">
+                      {skill}
+                    </p>
+                  </motion.li>
+                </div>
               ))}
           </ul>
         ))}

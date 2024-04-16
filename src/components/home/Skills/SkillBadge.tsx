@@ -15,7 +15,7 @@ export default function SkillBadge({
       }}
       whileInView={{
         opacity: 1,
-        y: [-20, 0],
+        y: 0,
       }}
       viewport={{
         once: true,

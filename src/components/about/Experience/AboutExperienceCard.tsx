@@ -52,10 +52,13 @@ export default function AboutExperienceCard({
                 y: 0,
                 opacity: 1,
               }}
+              viewport={{
+                once: true,
+              }}
               transition={{
                 type: 'spring',
-                delay: index * 0.2,
-                duration: 1,
+                delay: index * 0.3,
+                duration: 1.2,
               }}
               key={`${desc}-about-exp-desc`}
               className="mb-4 flex gap-4 text-secondary md:text-xl"
