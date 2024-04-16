@@ -1,3 +1,3 @@
 ## Credits
 
-- Favicon: Hardworking icon by [Icons8](https://icons8.com/icon/ZoRMCtUGaIL2/hardworking)
+Favicon: Code icons created by Royyan Wijaya - [Flaticon](https://www.flaticon.com/free-icons/code)
