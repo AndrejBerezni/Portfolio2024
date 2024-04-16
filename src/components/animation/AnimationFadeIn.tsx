@@ -20,6 +20,7 @@ export default function AnimationFadeIn({
       transition={{
         duration: 2,
         type: 'spring',
+        delay: 0.2,
       }}
       viewport={{
         once: true,

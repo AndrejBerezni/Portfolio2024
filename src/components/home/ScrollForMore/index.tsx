@@ -33,7 +33,18 @@ export default function ScrollForMore() {
   return (
     <>
       {isVisible && (
-        <div className="fixed bottom-6 right-6 lg:right-1/2">
+        <motion.div
+          initial={{
+            opacity: 0,
+          }}
+          animate={{
+            opacity: 1,
+          }}
+          transition={{
+            delay: 1.2,
+          }}
+          className="fixed bottom-6 right-6 lg:right-1/2"
+        >
           {elements.map((el) => (
             <motion.div
               initial={{
@@ -57,7 +68,7 @@ export default function ScrollForMore() {
               <SlArrowDown />
             </motion.div>
           ))}
-        </div>
+        </motion.div>
       )}
     </>
   )
