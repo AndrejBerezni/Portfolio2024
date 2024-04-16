@@ -25,7 +25,7 @@ export default function ExperienceCatalogue() {
   }
 
   return (
-    <div className="my-12 flex w-full flex-col gap-2 md:flex-row md:gap-24">
+    <div className="my-12 flex w-full flex-col gap-2 md:my-16 md:flex-row md:gap-24">
       <ExperienceSelector
         showExperience={selectSlide}
         currentSlide={currentSlide}
