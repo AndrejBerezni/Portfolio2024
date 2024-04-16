@@ -1,3 +1,4 @@
+import HomeExperienceSection from '@/components/home/Experience'
 import Hero from '@/components/home/Hero'
 import HomeProjectsSection from '@/components/home/Projects'
 import ScrollForMore from '@/components/home/ScrollForMore'
@@ -8,6 +9,7 @@ export default function Home() {
       <Hero />
       <HomeProjectsSection />
       <HomeSkillsSection />
+      <HomeExperienceSection />
       <ScrollForMore />
     </>
   )

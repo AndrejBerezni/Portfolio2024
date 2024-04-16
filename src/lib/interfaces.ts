@@ -5,3 +5,11 @@ export interface IProject {
   description: string
   stack: string[]
 }
+
+export interface IExperience {
+  position: string
+  company: string
+  startDate: string
+  endDate: string
+  description: string[]
+}
