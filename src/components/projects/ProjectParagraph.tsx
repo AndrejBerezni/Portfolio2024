@@ -17,9 +17,9 @@ export default function ProjectParagraph({
   return (
     <div
       className={clsx('flex flex-col gap-4', {
-        'my-12 lg:gap-12 lg:odd:flex-row-reverse lg:even:flex-row':
+        'my-12 lg:gap-12 lg:odd:flex-row lg:even:flex-row-reverse':
           imgType === 'desktop',
-        'my-12 md:gap-12 md:odd:flex-row-reverse md:even:flex-row':
+        'my-12 md:gap-12 md:odd:flex-row md:even:flex-row-reverse':
           imgType === 'mobile',
       })}
     >
@@ -41,8 +41,8 @@ export default function ProjectParagraph({
         />
       </AnimationFadeIn>
       <AnimationFadeIn
-        styles={clsx('flex w-full flex-col justify-center self-start', {
-          'lg:mt-2 lg:w-1/2': imgType === 'desktop',
+        styles={clsx('flex w-full flex-col justify-center', {
+          'lg:mt-2 lg:w-1/2 self-start': imgType === 'desktop',
           'md:mt-2 md:w-1/2': imgType === 'mobile',
         })}
       >

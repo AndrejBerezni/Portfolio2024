@@ -1,3 +1,4 @@
+import ProjectLinks from '@/components/projects/ProjectLinks'
 import ProjectParagraph from '@/components/projects/ProjectParagraph'
 import SectionTitle from '@/components/SectionTitle'
 import { projects } from '@/lib/projects'
@@ -10,8 +11,10 @@ export default function ProjectPage({
   const project = projects[Number(params.project) - 1]
   return (
     <section className="my-8 md:my-12">
-      <SectionTitle title={project.name} />
-
+      <div className="mb-16 flex w-full flex-col justify-between md:mb-24 md:flex-row">
+        <SectionTitle title={project.name} />{' '}
+        <ProjectLinks web={project.pageLink} github={project.ghLink} />
+      </div>
       <ProjectParagraph
         img={project.mainImage}
         imgType="desktop"

@@ -1,5 +1,7 @@
 export interface IProject {
   name: string
+  pageLink: string
+  ghLink: string
   mainImage: string
   desktopImages: string[]
   mobileImages: string[]

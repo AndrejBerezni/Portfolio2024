@@ -1,6 +1,8 @@
 export const projects = [
   {
     name: 'Flux',
+    pageLink: 'https://www.fluxecodrive.com/',
+    ghLink: 'https://github.com/AndrejBerezni/Flux',
     mainImage: '/flux.png',
     desktopImages: ['/flux-desktop-1.PNG'],
     mobileImages: ['/flux-mob-1.PNG', '/flux-mob-2.PNG'],
@@ -20,6 +22,8 @@ export const projects = [
   },
   {
     name: 'Schwarz',
+    pageLink: 'https://schwarzluxurywatches.web.app/',
+    ghLink: 'https://github.com/AndrejBerezni/Schwarz',
     mainImage: '/schwarz.png',
     desktopImages: ['/schwarz-desktop-1.PNG'],
     mobileImages: ['/schwarz-mob-1.PNG', '/schwarz-mob-2.PNG'],
