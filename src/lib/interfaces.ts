@@ -8,6 +8,7 @@ export interface IProject {
   shortDescription: string
   description: string
   stack: string[]
+  features: string[]
 }
 
 export interface IExperience {

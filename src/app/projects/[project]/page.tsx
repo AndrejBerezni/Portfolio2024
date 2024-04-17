@@ -1,3 +1,6 @@
+import Image from 'next/image'
+
+import AnimationFadeIn from '@/components/animation/AnimationFadeIn'
 import ProjectLinks from '@/components/projects/ProjectLinks'
 import ProjectParagraph from '@/components/projects/ProjectParagraph'
 import SectionTitle from '@/components/SectionTitle'
@@ -15,27 +18,33 @@ export default function ProjectPage({
         <SectionTitle title={project.name} />{' '}
         <ProjectLinks web={project.pageLink} github={project.ghLink} />
       </div>
-      <ProjectParagraph
-        img={project.mainImage}
-        imgType="desktop"
-        title="about"
-        text={project.description}
-      />
+      <AnimationFadeIn styles="w-full flex justify-center">
+        <Image
+          src={project.mainImage}
+          width={1200}
+          height={625}
+          alt={`${project.name}-project-page-main-image`}
+          className="h-auto w-full rounded-xl border-2 border-brand shadow-md"
+        />
+      </AnimationFadeIn>
+
       <ProjectParagraph
         img={project.mobileImages[0]}
         imgType="mobile"
+        title="about"
         text={project.description}
       />
       <ProjectParagraph
         img={project.desktopImages[0]}
         imgType="desktop"
-        text={project.description}
+        title="features"
+        list={project.features}
       />
       <ProjectParagraph
         img={project.mobileImages[1]}
         imgType="mobile"
-        title="results"
-        text={project.description}
+        title="stack"
+        list={project.stack}
       />
     </section>
   )
