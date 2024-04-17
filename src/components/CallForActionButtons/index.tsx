@@ -11,7 +11,7 @@ export default function CallForActionButtons() {
         Get In Touch
       </Link>
       <Link
-        href="/projects"
+        href="/projects/1"
         className={`${inter.className} rounded-xl border-[1px] border-primary bg-background px-4 py-2 text-center text-primary duration-200 hover:bg-primary hover:text-white xl:px-5 xl:py-3`}
       >
         Browse Projects

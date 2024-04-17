@@ -1,6 +1,8 @@
 export interface IProject {
   name: string
-  images: string[]
+  mainImage: string
+  desktopImages: string[]
+  mobileImages: string[]
   shortDescription: string
   description: string
   stack: string[]

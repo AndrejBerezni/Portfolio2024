@@ -5,7 +5,7 @@ export const links = [
   },
   {
     name: 'projects',
-    address: '/projects',
+    address: '/projects/1',
   },
   {
     name: 'about',

@@ -61,6 +61,7 @@ export default function MyStack() {
                       duration: 6,
                       repeat: Infinity,
                       repeatType: 'mirror',
+                      ease: 'linear',
                     }}
                     className="hidden items-center gap-8 text-nowrap tracking-wide sm:flex"
                   >

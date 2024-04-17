@@ -4,7 +4,7 @@ import { links } from '@/lib/links'
 
 import PageLink from '../PageLink'
 
-export default function DropDownMenu() {
+export default function DropDownMenu({ onClick }: { onClick: () => void }) {
   return (
     <motion.ul
       initial={{
@@ -22,7 +22,11 @@ export default function DropDownMenu() {
       className="absolute top-full z-10 -ml-4 flex w-screen flex-col gap-3 bg-background px-5 py-3 md:hidden"
     >
       {links.map((link) => (
-        <PageLink link={link} key={`${link.name}-navbar-dropdown-link`} />
+        <PageLink
+          link={link}
+          key={`${link.name}-navbar-dropdown-link`}
+          onClick={onClick}
+        />
       ))}
     </motion.ul>
   )

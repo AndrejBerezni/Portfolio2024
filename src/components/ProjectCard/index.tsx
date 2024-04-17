@@ -9,7 +9,7 @@ export default function ProjectCard({ project }: { project: IProject }) {
     <article>
       <div className="group my-4 flex items-center justify-center rounded-md border-4 border-gray-400 bg-gray-400 p-4 duration-500 hover:border-brand hover:shadow-md md:p-8">
         <Image
-          src={project.images[0]}
+          src={project.mainImage}
           alt="project image"
           width={1200}
           height={625}

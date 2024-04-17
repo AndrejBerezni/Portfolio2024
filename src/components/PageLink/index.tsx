@@ -5,20 +5,21 @@ import { usePathname } from 'next/navigation'
 
 export default function PageLink({
   link,
+  onClick,
 }: {
   link: {
     name: string
     address: string
   }
+  onClick?: () => void
 }) {
   const pathname = usePathname()
-  console.log(pathname)
   return (
-    <li>
+    <li onClick={onClick}>
       <Link
         href={link.address}
         className={clsx('text-nowrap font-semibold capitalize tracking-wide', {
-          'text-brand': pathname === link.address,
+          'text-brand': pathname.startsWith(link.address),
           'text-secondary duration-200  hover:text-brand':
             pathname !== link.address,
         })}

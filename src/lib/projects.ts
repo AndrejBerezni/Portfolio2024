@@ -1,7 +1,9 @@
 export const projects = [
   {
     name: 'Flux',
-    images: ['/flux.png'],
+    mainImage: '/flux.png',
+    desktopImages: ['/flux-desktop-1.PNG'],
+    mobileImages: ['/flux-mob-1.PNG', '/flux-mob-2.PNG'],
     shortDescription:
       'Full stack application for renting electrical vehicles (cars, bikes, and scooters) in Portugal.',
     description:
@@ -18,7 +20,9 @@ export const projects = [
   },
   {
     name: 'Schwarz',
-    images: ['/schwarz.png'],
+    mainImage: '/schwarz.png',
+    desktopImages: ['/schwarz-desktop-1.PNG'],
+    mobileImages: ['/schwarz-mob-1.PNG', '/schwarz-mob-2.PNG'],
     shortDescription:
       'E-commerce app selling luxury watches, with admin portal for managing the shop.',
     description:

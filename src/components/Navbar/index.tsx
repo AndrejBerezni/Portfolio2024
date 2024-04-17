@@ -35,7 +35,7 @@ export default function Navbar() {
         toggle={() => setMenuOpen((prev) => !prev)}
         open={menuOpen}
       />
-      {menuOpen && <DropDownMenu />}
+      {menuOpen && <DropDownMenu onClick={() => setMenuOpen(false)} />}
     </menu>
   )
 }
