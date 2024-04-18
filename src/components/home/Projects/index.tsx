@@ -8,9 +8,9 @@ export default function HomeProjectsSection() {
     <section className="my-8">
       <SectionTitle title="projects" />
       <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">
-        {projects.map((project) => (
+        {projects.map((project, index) => (
           <AnimationFadeIn key={`${project.name}-home-project-card`}>
-            <ProjectCard project={project} />
+            <ProjectCard project={project} link={`/projects/${index + 1}`} />
           </AnimationFadeIn>
         ))}
       </div>

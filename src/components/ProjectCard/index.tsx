@@ -4,7 +4,13 @@ import { IoMdArrowRoundUp } from 'react-icons/io'
 
 import { IProject } from '@/lib/interfaces'
 
-export default function ProjectCard({ project }: { project: IProject }) {
+export default function ProjectCard({
+  project,
+  link,
+}: {
+  project: IProject
+  link: string
+}) {
   return (
     <article>
       <div className="group my-4 flex items-center justify-center rounded-md border-4 border-gray-400 bg-gray-400 p-4 duration-500 hover:border-brand hover:shadow-md md:p-8">
@@ -16,10 +22,7 @@ export default function ProjectCard({ project }: { project: IProject }) {
           className="group-hover:translateY-2 rounded-lg duration-500"
         />
       </div>
-      <Link
-        href={`/projects/${project.name}`}
-        className="group flex w-fit items-center gap-4"
-      >
+      <Link href={link} className="group flex w-fit items-center gap-4">
         <h3 className="mb-2 text-xl font-bold tracking-wide md:text-3xl xl:text-5xl">
           {project.name}
         </h3>

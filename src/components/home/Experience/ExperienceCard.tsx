@@ -23,7 +23,7 @@ export default function ExperienceCard({
     >
       <h3 className="text-xl font-semibold md:text-3xl">
         {experience.position}{' '}
-        <span className="text-brand">@ {experience.company}</span>
+        <span className="text-nowrap text-brand">@ {experience.company}</span>
       </h3>
       <p className="mb-6 text-sm md:text-lg">
         {experience.startDate} - {experience.endDate}

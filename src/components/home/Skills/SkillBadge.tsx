@@ -21,7 +21,7 @@ export default function SkillBadge({
         once: true,
       }}
       transition={{
-        delay: delay * 0.03,
+        delay: delay * 0.05,
         type: 'spring',
         ease: 'linear',
       }}
