@@ -1,5 +1,16 @@
 export const experience = [
   {
+    position: 'Fullstack engineer',
+    company: 'Angry Panda Productions',
+    startDate: 'June 2024',
+    endDate: 'Present',
+    description: [
+      'Developing a customer-facing website and admin portal for a casino and sports betting platform using Next.js and React.',
+      'Collaborating on building a scalable backend, leveraging microservices architecture with Nest.js, Redis, and AWS.',
+      'Working within an agile environment on project managed with Jira.',
+    ],
+  },
+  {
     position: 'FastTrack Migration SME',
     company: 'Microsoft',
     startDate: 'October 2022',
