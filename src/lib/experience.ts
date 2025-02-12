@@ -1,8 +1,8 @@
 export const experience = [
   {
-    position: 'Fullstack engineer',
-    company: 'Angry Panda Productions',
-    startDate: 'June 2024',
+    position: 'Frontend React Developer',
+    company: 'Tech Wave Entertainment',
+    startDate: 'April 2024',
     endDate: 'Present',
     description: [
       'Developing a customer-facing website and admin portal for a casino and sports betting platform using Next.js and React.',
