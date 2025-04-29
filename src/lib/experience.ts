@@ -1,13 +1,23 @@
 export const experience = [
   {
     position: 'Frontend React Developer',
-    company: 'Tech Wave Entertainment',
+    company: 'Angry Panda Productions',
     startDate: 'April 2024',
     endDate: 'Present',
     description: [
-      'Developing a customer-facing website and admin portal for a casino and sports betting platform using Next.js and React.',
-      'Collaborating on building a scalable backend, leveraging microservices architecture with Nest.js, Redis, and AWS.',
+      'Developed a high-traffic online casino and gambling web app using React and Next.js, serving 300,000+ active users, driving daily revenue growth.',
+      'Built a robust back-office platform from the ground up with React, Next.js, Tailwind CSS, Shadcn/UI, and Tanstack Table, enabling internal teams to manage complex business operations.',
       'Working within an agile environment on project managed with Jira.',
+    ],
+  },
+  {
+    position: 'Frontend React Developer (part-time)',
+    company: 'Angry Panda Productions',
+    startDate: 'January 2023',
+    endDate: 'April 2024',
+    description: [
+      'Contributed to the core React and Next.js development of an online gaming platform, assisting in building responsive, user-friendly UI components aligned with brand and UX goals.',
+      'Participated in bug fixing, code reviews, and refactoring sessions to improve performance and code quality.',
     ],
   },
   {
@@ -16,9 +26,9 @@ export const experience = [
     startDate: 'October 2022',
     endDate: 'April 2024',
     description: [
-      'Working as a part of team delivering complex enterprise customer project of moving 100 000 seats from Google Workspace to Microsoft Cloud.',
-      'Creating documentation for internal tools and processes.',
-      'Writing scripts for task automation.',
+      'By leading the technical aspects of data migration for a customer with 100,000+ seats, helped Microsoft secure the account in a competitive project against Google, resulting in significant revenue growth for the company.',
+      'Contributed to the development of the UI for internal migration tooling using React and JavaScript, enhancing user experience for support engineers.',
+      'Composed complex SQL queries to analyze and troubleshoot migration data across various environments.',
     ],
   },
   {
