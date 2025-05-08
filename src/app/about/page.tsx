@@ -8,7 +8,7 @@ export default function AboutPage() {
     <>
       <AboutHeading />
       <MyStack />
-      <MyStory />
+      {/* <MyStory /> */}
       <AboutExperienceSection />
     </>
   )

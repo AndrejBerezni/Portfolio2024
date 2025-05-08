@@ -27,10 +27,10 @@ export default function MyStory() {
       </AnimationFadeIn>
       <AnimationFadeIn>
         <p className="mb-16 mt-6 text-lg md:text-2xl">
-          With just over a year of experience in development, I&apos;m excited
-          to keep growing as a <span className="text-brand">web developer</span>
-          . It&apos;s not just a job for me; it&apos;s what I love doing, and I
-          can&apos;t wait to see where it takes me next. 💜
+          I&apos;m excited to keep growing as a{' '}
+          <span className="text-brand">web developer</span>. It&apos;s not just
+          a job for me; it&apos;s what I love doing, and I can&apos;t wait to
+          see where it takes me next. 💜
         </p>
       </AnimationFadeIn>
     </section>
